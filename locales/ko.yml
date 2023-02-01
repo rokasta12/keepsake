@@ -3,9 +3,14 @@ button:
   back: 뒤로가기
   go: 이동
   home: 홈
+  login: 로그인
   toggle_dark: 다크모드 토글
   toggle_langs: 언어 변경
+error:
+  email: 유효한 이메일을 입력하세요
+  password: 올바른 암호를 입력하십시오
 intro:
+  aka: 또한 ~으로 알려진
   desc: Vite 애플리케이션 템플릿
   dynamic-route: 다이나믹 라우트 데모
   hi: 안녕, {name}!

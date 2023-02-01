@@ -3,12 +3,16 @@ button:
   back: Geri
   go: İLERİ
   home: Anasayfa
+  login: Giriş yapmak
   toggle_dark: Karanlık modu değiştir
   toggle_langs: Dilleri değiştir
+error:
+  email: lütfen geçerli eposta adresini giriniz
+  password: Lütfen geçerli bir şifre giriniz
 intro:
+  aka: Ayrıca şöyle bilinir
   desc: Görüşlü Vite Başlangıç Şablonu
   dynamic-route: Dinamik rota demosu
   hi: Merhaba, {name}!
-  aka: Ayrıca şöyle bilinir
   whats-your-name: Adınız nedir?
 not-found: Bulunamadı

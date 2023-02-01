@@ -7,6 +7,15 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AudioPlayer: typeof import('./components/AudioPlayer.vue')['default']
+    FamilyCard: typeof import('./components/FamilyCard.vue')['default']
+    HeroSection: typeof import('./components/HeroSection.vue')['default']
+    KeepSake: typeof import('./components/KeepSake.vue')['default']
+    LoginForm: typeof import('./components/forms/LoginForm.vue')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
+    PostCard: typeof import('./components/PostCard.vue')['default']
+    PostList: typeof import('./components/Posts/PostList.vue')['default']
+    PostLoader: typeof import('./components/Posts/PostLoader.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

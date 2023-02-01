@@ -30,6 +30,8 @@ declare global {
   const debouncedWatch: typeof import('@vueuse/core')['debouncedWatch']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
+  const dummyFamily: typeof import('./stores/dummy.data')['dummyFamily']
+  const dummyPosts: typeof import('./stores/dummy.data')['dummyPosts']
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
   const extendRef: typeof import('@vueuse/core')['extendRef']
@@ -210,7 +212,6 @@ declare global {
   const usePreferredDark: typeof import('@vueuse/core')['usePreferredDark']
   const usePreferredLanguages: typeof import('@vueuse/core')['usePreferredLanguages']
   const usePreferredReducedMotion: typeof import('@vueuse/core')['usePreferredReducedMotion']
-  const usePrevious: typeof import('@vueuse/core')['usePrevious']
   const useRafFn: typeof import('@vueuse/core')['useRafFn']
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
@@ -313,6 +314,8 @@ declare module 'vue' {
     readonly debouncedWatch: UnwrapRef<typeof import('@vueuse/core')['debouncedWatch']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
+    readonly dummyFamily: UnwrapRef<typeof import('./stores/dummy.data')['dummyFamily']>
+    readonly dummyPosts: UnwrapRef<typeof import('./stores/dummy.data')['dummyPosts']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
@@ -493,7 +496,6 @@ declare module 'vue' {
     readonly usePreferredDark: UnwrapRef<typeof import('@vueuse/core')['usePreferredDark']>
     readonly usePreferredLanguages: UnwrapRef<typeof import('@vueuse/core')['usePreferredLanguages']>
     readonly usePreferredReducedMotion: UnwrapRef<typeof import('@vueuse/core')['usePreferredReducedMotion']>
-    readonly usePrevious: UnwrapRef<typeof import('@vueuse/core')['usePrevious']>
     readonly useRafFn: UnwrapRef<typeof import('@vueuse/core')['useRafFn']>
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>
     readonly useResizeObserver: UnwrapRef<typeof import('@vueuse/core')['useResizeObserver']>
