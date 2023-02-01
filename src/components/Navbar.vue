@@ -3,8 +3,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
-
-console.log(route.name)
 // get current page name
 </script>
 
@@ -41,9 +39,9 @@ console.log(route.name)
               :class="{ 'border-indigo-500 ': route.name === 'index' }"
             >Home</a>
             <a
-              href="#"
+              href="/family"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >Team</a>
+            >Family</a>
             <a
               href="#"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"

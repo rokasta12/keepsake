@@ -17,7 +17,7 @@ const mobileMenuOpen = ref(false)
 <template>
   <div class="relative isolate overflow-hidden bg-gray-100">
     <img
-      src="https://images.unsplash.com/photo-1478061653917-455ba7f4a541?ixlib=rb-4.0.3&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-40&exp=45&blend-mode=multiply"
+      src="61653917-455ba7f4a541?ixlib=rb-4.0.3&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-40&exp=45&blend-mode=multiply"
       alt="" class="absolute inset-0 -z-10 h-full w-full object-cover"
     >
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -46,18 +46,17 @@ const mobileMenuOpen = ref(false)
           <div
             class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
           >
-            Announcing our next round of funding. <a href="#" class="font-semibold text-white"><span
+            Invite your family members now. <a href="#" class="font-semibold text-white"><span
               class="absolute inset-0" aria-hidden="true"
             />Read more <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Data to enrich your online business
+            Stories and Memories
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+            Create and share generational stories and memories with the ones you love the most. Easily create or upload memories to share with your entire family.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
