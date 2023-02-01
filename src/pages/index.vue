@@ -1,52 +1,30 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 defineOptions({
   name: 'IndexPage',
 })
 const user = useUserStore()
-const name = $ref(user.savedName)
 
 const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
-
-const { t } = useI18n()
 </script>
 
 <template>
+  <HeroSection />
   <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
-    </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
-
-    <div py-4 />
-
-    <TheInput
-      v-model="name"
-      placeholder="What's your name?"
-      autocomplete="false"
-      @keydown.enter="go"
-    />
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
     <div>
-      <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
+      <button class="btn m-3 " @click="router.push('/auth/login')">
+        {{ t('button.login') }}
+      </button>
+      <button class="btn-ghost m-3 " @click="router.push('/auth/signup')">
+        {{ t('button.signup') }}
       </button>
     </div>
+
+    <div>
+      <FamilyCard :family="dummyFamily" />
+    </div>
+    <PostList />
   </div>
 </template>
 
