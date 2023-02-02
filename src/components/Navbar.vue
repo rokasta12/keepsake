@@ -42,11 +42,20 @@ const route = useRoute()
               href="/family"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
             >Family</a>
+
             <a
               href="/feed"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 "
               :class="{ 'border-indigo-500 ': route.name === 'feed' }"
             >Posts</a>
+            <a
+              href="/auth/signup"
+              class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >Sign up</a>
+            <a
+              href="/auth/login"
+              class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >Login</a>
           </div>
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
