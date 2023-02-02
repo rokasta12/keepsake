@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <div>
-    Login
+  <div class="h-2xl">
+    Sign Up
+    <SignupForm />
   </div>
 </template>

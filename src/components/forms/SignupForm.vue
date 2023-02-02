@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { login } from '~/common/services/services'
-
 const emit = defineEmits<{
   (e: 'login', data: {
     email: string
@@ -51,10 +49,9 @@ const handleSubmit = async (e: MouseEvent) => {
     password: password.value,
   }
 
-  const loginResponse = await login(body.email, body.password)
-  console.log('🚀 ~ file: LoginForm.vue:54 ~ handleSubmit ~ loginResponse', loginResponse)
+  const signupresponse = await signup(body.email, body.password)
 
-  emit('login', body)
+  emit('signup', body)
 }
 </script>
 
@@ -64,7 +61,7 @@ const handleSubmit = async (e: MouseEvent) => {
       <label class=" text-gray-700 text-left" for="name">
         Name
       </label>
-      <TheInput v-model=""name"" placeholder="What's your email?" autocomplete="false" />
+      <TheInput v-model="name" placeholder="What's your email?" autocomplete="false" />
       <label class=" text-gray-700 text-left" for="email">
         Email
       </label>
