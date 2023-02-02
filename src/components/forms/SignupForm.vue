@@ -1,19 +1,39 @@
 <script setup lang="ts">
+import { services } from '~/common/services/services'
 const emit = defineEmits<{
   (e: 'login', data: {
     email: string
     password: string
-    name: string
+    firstName: string
+    lastName: string
   }): void
 }>()
-
-const email = ref('')
+const router = useRouter()
+const email = ref<string>('')
 const password = ref<string>('')
+const firstName = ref<string>('')
+const lastName = ref<string>('')
+
+/* const formData = reactive<SignupData>({
+  email: '',
+  password: '',
+  firstName: '',
+  lastName: '',
+})
+ */
 const isFormDirty = ref(false)
 const errors = reactive({
   email: '',
   password: '',
+  firstName: '',
+  lastName: '',
 })
+const responseError = reactive(
+  {
+    title: '',
+    body: '',
+  },
+)
 const { t } = useI18n()
 
 const validateFields = () => {
@@ -49,7 +69,21 @@ const handleSubmit = async (e: MouseEvent) => {
     password: password.value,
   }
 
-  const signupresponse = await signup(body.email, body.password)
+  try {
+    const signupresponse = await services.signup({
+      email: email.value,
+      password: password.value,
+      firstName: firstName.value,
+      lastName: lastName.value,
+    })
+    if (signupresponse.status === 201)
+
+      router.push('/auth/verify')
+  }
+  catch (error) {
+    responseError.title = t('login.errors.title')
+    responseError.body = t('login.errors.body')
+  }
 
   emit('signup', body)
 }
@@ -58,10 +92,15 @@ const handleSubmit = async (e: MouseEvent) => {
 <template>
   <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex justify-center">
     <div class="flex flex-col gap-1 max-w-xl" w="300px">
+      <Alert :error="responseError" />
       <label class=" text-gray-700 text-left" for="name">
-        Name
+        First name
       </label>
-      <TheInput v-model="name" placeholder="What's your email?" autocomplete="false" />
+      <TheInput v-model="firstName" placeholder="What's your email?" autocomplete="false" />
+      <label class=" text-gray-700 text-left" for="name">
+        Last name
+      </label>
+      <TheInput v-model="lastName" placeholder="What's your email?" autocomplete="false" />
       <label class=" text-gray-700 text-left" for="email">
         Email
       </label>
@@ -77,7 +116,7 @@ const handleSubmit = async (e: MouseEvent) => {
         {{ errors.password }}
       </p>
       <button class="loading" btn mt-2 text-lg :onclick="handleSubmit">
-        {{ t('button.login') }}
+        {{ t('button.signup') }}
       </button>
     </div>
   </div>

@@ -9,6 +9,13 @@ button:
 error:
   email: 유효한 이메일을 입력하세요
   password: 올바른 암호를 입력하십시오
+herosection:
+  header: 이야기와 추억
+  heroparagraph: |-
+    가장 사랑하는 사람들과 함께 세대별 이야기와 추억을 만들고 공유하세요. 
+    가족 전체와 공유할 추억을 쉽게 만들거나 업로드하세요.
+  login: 로그인
+  signup: 가입하기
 intro:
   aka: 또한 ~으로 알려진
   desc: Vite 애플리케이션 템플릿

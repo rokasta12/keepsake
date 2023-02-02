@@ -9,6 +9,15 @@ button:
 error:
   email: lütfen geçerli eposta adresini giriniz
   password: Lütfen geçerli bir şifre giriniz
+herosection:
+  header: Hikayeler ve Anılar
+  heroparagraph: >-
+    Nesiller boyu hikayeler ve anılar yaratın ve en çok sevdiklerinizle
+    paylaşın. 
+
+    Tüm ailenizle paylaşmak için kolayca anılar oluşturun veya yükleyin.
+  login: Giriş yapmak
+  signup: Üye olmak
 intro:
   aka: Ayrıca şöyle bilinir
   desc: Görüşlü Vite Başlangıç Şablonu

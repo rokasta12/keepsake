@@ -5,6 +5,15 @@ button:
   home: Khởi đầu
   toggle_dark: Chuyển đổi chế độ tối
   toggle_langs: Thay đổi ngôn ngữ
+herosection:
+  header: Câu chuyện và Ký ức
+  heroparagraph: >-
+    Tạo và chia sẻ những câu chuyện và kỷ niệm thế hệ với những người bạn yêu
+    thích nhất. 
+
+    Dễ dàng tạo hoặc tải lên những kỷ niệm để chia sẻ với cả gia đình bạn.
+  login: Đăng nhập
+  signup: Đăng ký
 intro:
   desc: Ý kiến cá nhân Vite Template để bắt đầu
   dynamic-route: Bản giới thiệu về dynamic route

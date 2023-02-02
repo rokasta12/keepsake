@@ -15,7 +15,7 @@ const route = useRoute()
       </a>
     </div>
   </div> -->
-  <Disclosure v-slot="{ open }" as="nav" class="bg-white shadow">
+  <Disclosure v-slot="{ open }" as="nav" class="bg-white shadow dark:bg-black dark:text-white">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -51,7 +51,8 @@ const route = useRoute()
             <a
               href="/auth/signup"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >Sign up</a>
+            >Sign
+              up</a>
             <a
               href="/auth/login"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"

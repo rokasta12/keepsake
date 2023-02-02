@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
 ]
+const { t } = useI18n()
 
 const mobileMenuOpen = ref(false)
 </script>
@@ -17,7 +18,7 @@ const mobileMenuOpen = ref(false)
 <template>
   <div class="relative isolate overflow-hidden bg-gray-100">
     <img
-      src="61653917-455ba7f4a541?ixlib=rb-4.0.3&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-40&exp=45&blend-mode=multiply"
+      src="https://images.unsplash.com/photo-1478061653917-455ba7f4a541?ixlib=rb-4.0.3&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-40&exp=45&blend-mode=multiply"
       alt="" class="absolute inset-0 -z-10 h-full w-full object-cover"
     >
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -53,20 +54,17 @@ const mobileMenuOpen = ref(false)
         </div>
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Stories and Memories
+            {{ t('herosection.header') }}
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-300">
-            Create and share generational stories and memories with the ones you love the most. Easily create or upload memories to share with your entire family.
+            {{ t('herosection.heroparagraph') }}
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              class="rounded-md bg-indigo-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >Get
-              started</a>
-            <a href="#" class="text-base font-semibold leading-7 text-white">Learn more <span
-              aria-hidden="true"
-            >→</span></a>
+            <a href="/auth/signup" class="btn">{{
+              t('herosection.signup')
+            }} </a>
+            <a href="/auth/login" class="text-base font-semibold leading-7 text-white">{{ t('herosection.login') }}
+              <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>

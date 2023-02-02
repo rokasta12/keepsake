@@ -5,10 +5,17 @@ button:
   home: 首页
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
+herosection:
+  header: 故事与回忆
+  heroparagraph: |-
+    与您最爱的人一起创造和分享世代相传的故事和回忆。
+    轻松创建或上传回忆，与全家人分享。
+  login: 登录
+  signup: 注册
 intro:
+  aka: 也叫
   desc: 固执己见的 Vite 项目模板
   dynamic-route: 动态路由演示
   hi: 你好，{name}
-  aka: 也叫
   whats-your-name: 输入你的名字
 not-found: 未找到页面

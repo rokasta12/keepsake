@@ -1,12 +1,12 @@
-export const baseURL = 'http://localhost:3000'
+export const baseURL = 'http://localhost:3002'
 export const prodURL = 'https://api.jelylabs.com/proxy'
 
 export const endpoints = {
   auth: {
-    login: '/auth/login',
-    register: '/auth/register',
-    logout: '/auth/logout',
-    verify: '/auth/verify',
+    login: '/v1/auth/login',
+    register: '/v1/auth/register',
+    logout: '/v1/auth/logout',
+    verify: '/v1/auth/verify-email',
   },
   posts: '/posts',
 }

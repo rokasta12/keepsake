@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Alert: typeof import('./components/Notification/Alert.vue')['default']
     AudioPlayer: typeof import('./components/AudioPlayer.vue')['default']
     Family: typeof import('./components/forms/Family.vue')['default']
     FamilyCard: typeof import('./components/FamilyCard.vue')['default']
@@ -24,5 +25,6 @@ declare module '@vue/runtime-core' {
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
+    VerifyEmail: typeof import('./components/forms/VerifyEmail.vue')['default']
   }
 }

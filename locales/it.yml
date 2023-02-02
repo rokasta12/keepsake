@@ -5,6 +5,15 @@ button:
   home: Home
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
+herosection:
+  header: Storie e ricordi
+  heroparagraph: >-
+    Crea e condividi storie e ricordi generazionali con le persone che ami di
+    più. 
+
+    Crea o carica facilmente ricordi da condividere con tutta la tua famiglia.
+  login: Login
+  signup: Iscrizione
 intro:
   desc: Modello per una Applicazione Vite
   dynamic-route: Demo di rotta dinamica

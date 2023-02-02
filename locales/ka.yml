@@ -5,10 +5,19 @@ button:
   home: მთავარი
   toggle_dark: გადართე მუქი რეჟიმი
   toggle_langs: ენის შეცვლა
+herosection:
+  header: მოთხრობები და მოგონებები
+  heroparagraph: >-
+    შექმენით და გააზიარეთ თაობის ისტორიები და მოგონებები მათთან, ვინც ყველაზე
+    მეტად გიყვართ. 
+
+    მარტივად შექმენით ან ატვირთეთ მოგონებები მთელ ოჯახთან გასაზიარებლად.
+  login: Შესვლა
+  signup: რეგისტრაცია
 intro:
+  aka: ასევე ცნობილი როგორც
   desc: Opinionated Vite Starter Template
   dynamic-route: დინამიური როუტინგის დემო
   hi: გამარჯობა, {name}!
-  aka: ასევე ცნობილი როგორც
   whats-your-name: რა გქვია?
 not-found: ვერ მოიძებნა

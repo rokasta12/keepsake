@@ -49,3 +49,25 @@ export interface PostedBy {
   familyId: string[]
   __v: number
 }
+
+export interface SignupData {
+  email: string
+  password: string
+  firstName: string
+  lastName: string
+}
+
+export interface User {
+  firstName: string
+  lastName: string
+  email: string
+  familyId: any[]
+  _id: string
+  createdAt: string
+  updatedAt: string
+  __v: number
+}
+export interface VerifyEmailData {
+  otp: string
+  email: string
+}

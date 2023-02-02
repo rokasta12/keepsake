@@ -5,10 +5,20 @@ button:
   home: Strona główna
   toggle_dark: Ustaw tryb nocny
   toggle_langs: Zmień język
+herosection:
+  header: Historie i wspomnienia
+  heroparagraph: >-
+    Twórz i udostępniaj pokoleniowe historie i wspomnienia tym, których kochasz
+    najbardziej. 
+
+    Z łatwością twórz lub przesyłaj wspomnienia, aby dzielić się nimi z całą
+    rodziną.
+  login: Zaloguj sie
+  signup: Zapisz się
 intro:
+  aka: Znany też jako
   desc: Opiniowany szablon startowy Vite
   dynamic-route: Demonstracja dynamicznego route
   hi: Cześć, {name}!
-  aka: Znany też jako
   whats-your-name: Jak masz na imię?
 not-found: Nie znaleziono
