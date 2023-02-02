@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { login, services } from '~/common/services/services'
+import { errorMessages } from '~/common/constants/data'
+import { services } from '~/common/services/services'
 
 const emit = defineEmits<{
   (e: 'signup', data: {
@@ -12,12 +13,13 @@ const email = ref('')
 const password = ref<string>('')
 const passwordConfirm = ref<string>('')
 const isFormDirty = ref(false)
+const user = useUserStore()
 const errors = reactive({
   email: '',
   password: '',
 })
 const { t } = useI18n()
-
+const router = useRouter()
 const validateFields = () => {
   if (!email.value)
     errors.email = t('error.email')
@@ -52,10 +54,19 @@ const handleSubmit = async (e: MouseEvent) => {
 
   try {
     const loginResponse = await services.login(body.email, body.password)
-    console.log('🚀 ~ file: LoginForm.vue:55 ~ handleSubmit ~ loginResponse', loginResponse)
+
+    user.setAccessToken(loginResponse.data.idToken.jwtToken)
+    /* useLocalStorage('userresponse', loginResponse) */
+    localStorageState.value = loginResponse.data
+    if (loginResponse.status.toString().startsWith('2'))
+      router.push('/feed')
   }
   catch (error) {
-    console.log('errorr', error)
+    const errorMsg = error?.response?.data?.message
+    if (errorMsg === errorMessages.userNotConfirmed)
+      router.push('/auth/verify')
+    if (errorMsg === errorMessages.wrongPassword)
+      errors.password = t('error.wrongPassword')
   }
   emit('signup', body)
 }

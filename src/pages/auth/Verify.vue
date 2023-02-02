@@ -4,10 +4,15 @@ import { services } from '~/common/services/services'
 const { t } = useI18n()
 const otp = ref<string>('')
 const isDirty = ref<boolean>(false)
-
-const handleVerify = () => {
-  console.log(otp.value)
+const router = useRouter()
+const handleVerify = async () => {
   isDirty.value = true
+  const response = await services.verifyEmail({
+    otp: otp.value.toString(),
+    email: 'xatar891@gmail.com',
+  })
+  if (response.status.toString().startsWith('2'))
+    router.push('/auth/login')
 }
 const resendCode = () => {
   console.log('resend')
@@ -15,9 +20,7 @@ const resendCode = () => {
 </script>
 
 <template>
-  <div
-    class="w-full h-xl flex flex-col items-center mt-4 bg-white  px-8 pt-6 pb-8 mb-4 flex justify-center"
-  >
+  <div class="w-full h-xl flex flex-col items-center mt-4 bg-white  px-8 pt-6 pb-8 mb-4 flex justify-center">
     <div class="w-xl flex justify-center max-w-sm rounded overflow-hidden shadow-lg  py-6 px-4 min-h-[200px]">
       <div class="w-64">
         <h2 class="text-lg self-start">

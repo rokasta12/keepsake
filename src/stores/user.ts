@@ -8,7 +8,7 @@ export const useUserStore = defineStore('user', () => {
   const savedName = ref('')
   const previousNames = ref(new Set<string>())
   const currentUser = ref<User | null>(null)
-
+  const accessToken = ref<string>('')
   const usedNames = computed(() => Array.from(previousNames.value))
   const otherNames = computed(() => usedNames.value.filter(name => name !== savedName.value))
 
@@ -27,12 +27,17 @@ export const useUserStore = defineStore('user', () => {
   function setUser(user: User) {
     currentUser.value = user
   }
+  function setAccessToken(token: string) {
+    accessToken.value = token
+  }
 
   return {
     setNewName,
     otherNames,
     savedName,
+    accessToken,
     setUser,
+    setAccessToken,
   }
 })
 

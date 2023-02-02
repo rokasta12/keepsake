@@ -3,13 +3,14 @@
 import { endpoints } from '../constants/urls'
 import { httpClient } from './httpClient'
 import type { Post, SignupData, VerifyEmailData } from '~/stores/types'
+import type { LoginResponse } from '~/stores/response.type'
 
 export const login = async (email: string, password: string) => {
-  const response = await httpClient.post(endpoints.auth.login, {
+  const response = await httpClient.post<LoginResponse>(endpoints.auth.login, {
     email,
     password,
   })
-  return response.data
+  return { data: response.data, status: response.status }
 }
 
 export const getPosts = async () => {

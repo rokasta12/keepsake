@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { LoginResponse } from './stores/response.type'
 import './styles/main.css'
 
 // https://github.com/vueuse/head
@@ -20,6 +21,21 @@ useHead({
       href: computed(() => preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg'),
     },
   ],
+})
+const router = useRouter()
+
+const user = useUserStore()
+
+onMounted(async () => {
+  const tokenRes: LoginResponse = localStorageState.value
+  const accesToken = tokenRes?.accessToken?.jwtToken
+  if (accesToken) {
+    user.setAccessToken(accesToken)
+    router.push('/feed')
+  }
+  else {
+    /* router.push('/auth/login') */
+  }
 })
 </script>
 

@@ -11,6 +11,7 @@ error:
   email: Please enter a valid email
   otp: Please fill otp
   password: Please enter a valid password
+  wrongPassword: Wrong Password or Email
 footer:
   language: Language
   title: KeepSake

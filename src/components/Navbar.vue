@@ -3,6 +3,11 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
+const router = useRouter()
+const logout = () => {
+  localStorageState.value = null
+  router.replace('/')
+}
 // get current page name
 </script>
 
@@ -98,7 +103,10 @@ const route = useRoute()
                   >Profile Settings</a>
                 </MenuItem>
                 <MenuItem v-slot="{ active }">
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" :class="[active ? 'bg-gray-100' : '']">Sign
+                  <a
+                    href="#" class="block px-4 py-2 text-sm text-gray-700" :class="[active ? 'bg-gray-100' : '']"
+                    @click="logout"
+                  >Sign
                     out</a>
                 </MenuItem>
               </MenuItems>
