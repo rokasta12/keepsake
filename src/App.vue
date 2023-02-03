@@ -31,7 +31,7 @@ onMounted(async () => {
   const accesToken = tokenRes?.accessToken?.jwtToken
   if (accesToken) {
     user.setAccessToken(accesToken)
-    router.push('/feed')
+    /* router.push('/feed') */
   }
   else {
     /* router.push('/auth/login') */

@@ -8,6 +8,7 @@ const emit = defineEmits<{
     lastName: string
   }): void
 }>()
+const user = useUserStore()
 const router = useRouter()
 const email = ref<string>('')
 const password = ref<string>('')
@@ -76,9 +77,10 @@ const handleSubmit = async (e: MouseEvent) => {
       firstName: firstName.value,
       lastName: lastName.value,
     })
-    if (signupresponse.status === 201)
-
+    if (signupresponse.status === 201) {
+      user.setUser(signupresponse.data)
       router.push('/auth/verify')
+    }
   }
   catch (error) {
     responseError.title = t('login.errors.title')

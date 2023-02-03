@@ -70,6 +70,9 @@ const handleSubmit = async (e: MouseEvent) => {
   }
   emit('signup', body)
 }
+onMounted(() => {
+  email.value = user.currentUser?.email || ''
+})
 </script>
 
 <template>

@@ -35,6 +35,7 @@ export const useUserStore = defineStore('user', () => {
     setNewName,
     otherNames,
     savedName,
+    currentUser,
     accessToken,
     setUser,
     setAccessToken,

@@ -2,14 +2,16 @@
 import { services } from '~/common/services/services'
 
 const { t } = useI18n()
+const user = useUserStore()
 const otp = ref<string>('')
+const email = ref<string>('')
 const isDirty = ref<boolean>(false)
 const router = useRouter()
 const handleVerify = async () => {
   isDirty.value = true
   const response = await services.verifyEmail({
     otp: otp.value.toString(),
-    email: 'xatar891@gmail.com',
+    email: email.value,
   })
   if (response.status.toString().startsWith('2'))
     router.push('/auth/login')
@@ -17,6 +19,9 @@ const handleVerify = async () => {
 const resendCode = () => {
   console.log('resend')
 }
+onMounted(() => {
+  email.value = user?.currentUser?.email || ''
+})
 </script>
 
 <template>
@@ -26,6 +31,7 @@ const resendCode = () => {
         <h2 class="text-lg self-start">
           {{ t('verify.title') }}
         </h2>
+        <TheInput v-model="email" class="mb-4" />
         <VerifyEmail v-model="otp" :fields="6" />
         <p class="text-red-400 text-center mt-2 text-sm">
           {{ !otp && isDirty ? t('error.otp') : '' }}
