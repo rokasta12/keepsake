@@ -30,6 +30,24 @@ export const verifyEmail = async (verifData: VerifyEmailData) => {
   return { data: response.data, status: response.status }
 }
 
+export const makePost = async (req: any) => {
+  const response = await httpClient.post(endpoints.posts, req)
+
+  return { data: response.data, status: response.status }
+}
+
+export const getAccountDetails = async () => {
+  const response = await httpClient.get(endpoints.auth.accountDetails)
+
+  return response.data
+}
+
+export const editAccountDetails = async (data: any) => {
+  const response = await httpClient.put(endpoints.auth.accountDetails, data)
+
+  return response.data
+}
+
 export const services = {
-  signup, verifyEmail, login,
+  signup, verifyEmail, login, makePost, getAccountDetails, getPosts, editAccountDetails,
 }

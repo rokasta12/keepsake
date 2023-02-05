@@ -1,3 +1,5 @@
+Posts are loading: Les messages sont en cours de chargement
+Share a new story: Partager une nouvelle histoire
 button:
   about: À propos
   back: Retour
@@ -22,3 +24,7 @@ intro:
   hi: Salut, {name}!
   whats-your-name: Comment t'appelles-tu ?
 not-found: Page non trouvée
+p:
+  comments: aucun commentaire pour l'instant
+span:
+  post: Partager une histoire

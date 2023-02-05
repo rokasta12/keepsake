@@ -12,6 +12,8 @@ const getposts = async () => {
 onMounted(() => {
   getposts()
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -20,7 +22,7 @@ onMounted(() => {
       <PostCard v-for="post in posts" :key="post._id" :post="post" />
     </div>
     <div v-else>
-      <p>Posts are loadingg</p>
+      <p>{{ t("p.posts") }}</p>
       <PostLoader v-for="_, index in Array.from({ length: 10 })" :key="index" />
     </div>
   </div>

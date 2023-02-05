@@ -1,3 +1,5 @@
+Posts are loading: 投稿を読み込んでいます
+Share a new story: 新しいストーリーを共有する
 button:
   about: これは？
   back: 戻る
@@ -18,3 +20,7 @@ intro:
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
 not-found: 見つかりませんでした
+p:
+  comments: コメントはまだありません
+span:
+  post: ストーリーを共有する

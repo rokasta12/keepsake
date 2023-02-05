@@ -1,3 +1,5 @@
+Posts are loading: Bài viết đang tải
+Share a new story: Chia sẻ một câu chuyện mới
 button:
   about: Về
   back: Quay lại
@@ -20,3 +22,7 @@ intro:
   hi: Hi, {name}!
   whats-your-name: Tên bạn là gì?
 not-found: Không tìm thấy
+p:
+  comments: Chưa có bình luận nào
+span:
+  post: Chia sẻ một câu chuyện

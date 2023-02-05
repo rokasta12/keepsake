@@ -1,8 +1,11 @@
 <script>
+import { httpClient } from '~/common/services/httpClient'
+import { services } from '~/common/services/services'
 export default {
   data() {
     return {
-      name: '',
+      secretId: '',
+      firstName: '',
       lastName: '',
       email: '',
       birthDate: '',
@@ -10,9 +13,42 @@ export default {
       profilePicture: '',
     }
   },
+  created() {
+    this.fetchAccountDetails()
+  },
   methods: {
-    submitForm() {
-      // Add logic to submit form data
+    async fetchAccountDetails() {
+      try {
+        const response = await services.getAccountDetails()
+        this.secretId = response._id
+        this.firstName = response.firstName
+        this.lastName = response.lastName
+        this.email = response.email
+        this.birthDate = response.birthDate
+        this.phoneNumber = response.phoneNumber
+        this.profilePicture = response.profilePicture
+      }
+      catch (error) {
+        console.error(error)
+      }
+    },
+    async submitForm() {
+      try {
+        const response = await services.editAccountDetails ({
+          _id: this.secretId,
+          firstName: this.firstName,
+          lastName: this.lastName,
+          birthDate: this.birthDate,
+          phoneNumber: this.phoneNumber,
+          profilePicture: this.profilePicture,
+        })
+
+        console.log('finished update')
+      }
+      catch (error) {
+        console.error(error)
+        console.log('here')
+      }
     },
   },
 }
@@ -25,9 +61,9 @@ export default {
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
       <div class="mb-4 md:mb-0">
-        <label class="text-lg font-medium mb-2">Name</label>
+        <label class="text-lg font-medium mb-2">First Name</label>
         <input
-          v-model="name"
+          v-model="firstName"
           class="border border-gray-300 p-2 rounded-lg"
           type="text"
         >

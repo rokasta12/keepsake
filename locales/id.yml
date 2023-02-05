@@ -1,3 +1,5 @@
+Posts are loading: Postingan sedang dimuat
+Share a new story: Berbagi cerita baru
 button:
   about: Tentang
   back: Kembali
@@ -22,3 +24,7 @@ intro:
   hi: Halo, {name}!
   whats-your-name: Siapa nama anda?
 not-found: Tidak ditemukan
+p:
+  comments: Belum ada komentar
+span:
+  post: Berbagi cerita

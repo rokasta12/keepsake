@@ -1,3 +1,5 @@
+Posts are loading: Posts are loading
+Share a new story: Share a new story
 button:
   about: About
   back: Back
@@ -33,6 +35,10 @@ login:
     body: Please try again later
     title: Could'nt Signup
 not-found: Not found
+p:
+  comments: No comments yet
+span:
+  post: Share a story
 verify:
   resend: Resend
   title: Verify your email

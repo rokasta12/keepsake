@@ -1,3 +1,5 @@
+Posts are loading: პოსტები იტვირთება
+Share a new story: გააზიარეთ ახალი ამბავი
 button:
   about: შესახებ
   back: უკან
@@ -21,3 +23,7 @@ intro:
   hi: გამარჯობა, {name}!
   whats-your-name: რა გქვია?
 not-found: ვერ მოიძებნა
+p:
+  comments: კომენტარი ჯერ არ არის
+span:
+  post: გააზიარეთ ამბავი

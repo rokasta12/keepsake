@@ -1,3 +1,5 @@
+Posts are loading: I post si stanno caricando
+Share a new story: Condividi una nuova storia
 button:
   about: Su di me
   back: Indietro
@@ -20,3 +22,7 @@ intro:
   hi: Ciao, {name}!
   whats-your-name: Come ti chiami?
 not-found: Non trovato
+p:
+  comments: Ancora nessun commento
+span:
+  post: Condividi una storia

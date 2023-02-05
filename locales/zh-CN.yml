@@ -1,3 +1,5 @@
+Posts are loading: 帖子正在加载
+Share a new story: 分享一个新故事
 button:
   about: 关于
   back: 返回
@@ -19,3 +21,7 @@ intro:
   hi: 你好，{name}
   whats-your-name: 输入你的名字
 not-found: 未找到页面
+p:
+  comments: 暂时没有评论
+span:
+  post: 分享一个故事

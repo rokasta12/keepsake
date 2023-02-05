@@ -7,6 +7,8 @@ const props = defineProps<{
 }>()
 const emptyProfilePic = 'https://www.pngitem.com/pimgs/m/504-5040528_empty-profile-picture-png-transparent-png.png'
 const post = props.post
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -40,7 +42,7 @@ const post = props.post
           </ul>
         </p>
         <p v-else class="text-sm text-gray-600">
-          No comments yet.
+          {{ t("p.comments") }}
         </p>
         <div />
       </div>

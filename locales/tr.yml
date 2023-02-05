@@ -1,3 +1,5 @@
+Posts are loading: Gönderiler yükleniyor
+Share a new story: Yeni bir hikaye paylaşın
 button:
   about: Hakkımda
   back: Geri
@@ -25,3 +27,7 @@ intro:
   hi: Merhaba, {name}!
   whats-your-name: Adınız nedir?
 not-found: Bulunamadı
+p:
+  comments: henüz yorum yok
+span:
+  post: Bir hikaye paylaşın

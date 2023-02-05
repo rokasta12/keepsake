@@ -7,6 +7,7 @@ export const endpoints = {
     register: '/v1/auth/register',
     logout: '/v1/auth/logout',
     verify: '/v1/auth/verify-email',
+    accountDetails: '/v1/auth/me',
   },
   posts: '/posts',
 }

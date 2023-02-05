@@ -1,3 +1,5 @@
+Posts are loading: As postagens estão carregando
+Share a new story: Compartilhe uma nova história
 button:
   about: Sobre
   back: Voltar
@@ -21,3 +23,7 @@ intro:
   hi: Olá, {name}!
   whats-your-name: Qual é o seu nome?
 not-found: Não encontrado
+p:
+  comments: Nenhum comentário ainda
+span:
+  post: Compartilhe uma história

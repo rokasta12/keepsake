@@ -1,3 +1,5 @@
+Posts are loading: يتم تحميل المشاركات
+Share a new story: شارك قصة جديدة
 button:
   about: حول
   back: رجوع
@@ -19,3 +21,7 @@ intro:
   hi: مرحبا {name}
   whats-your-name: ما إسمك؟
 not-found: صفحة غير موجودة
+p:
+  comments: لا تعليقات حتى الآن
+span:
+  post: شارك قصة

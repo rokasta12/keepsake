@@ -1,3 +1,5 @@
+Posts are loading: Дописи завантажуються
+Share a new story: Поділіться новою історією
 button:
   about: Про шаблон
   back: Назад
@@ -21,3 +23,7 @@ intro:
   hi: Привіт, {name}!
   whats-your-name: Як тебе звати?
 not-found: Не знайдено
+p:
+  comments: Поки немає коментарів
+span:
+  post: Поділіться історією

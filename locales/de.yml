@@ -1,3 +1,5 @@
+Posts are loading: Beiträge werden geladen
+Share a new story: Teilen Sie eine neue Geschichte
 button:
   about: Über
   back: Zurück
@@ -22,3 +24,7 @@ intro:
   hi: Hi, {name}!
   whats-your-name: Wie heißt du?
 not-found: Nicht gefunden
+p:
+  comments: Noch keine Kommentare
+span:
+  post: Teilen Sie eine Geschichte

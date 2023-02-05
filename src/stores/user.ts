@@ -6,6 +6,7 @@ export const useUserStore = defineStore('user', () => {
    * Current name of the user.
    */
   const savedName = ref('')
+  const isLoggedIn = ref(false)
   const previousNames = ref(new Set<string>())
   const currentUser = ref<User | null>(null)
   const accessToken = ref<string>('')
@@ -31,6 +32,10 @@ export const useUserStore = defineStore('user', () => {
     accessToken.value = token
   }
 
+  function switchIsLoggedIn() {
+    isLoggedIn.value = !isLoggedIn.value
+  }
+
   return {
     setNewName,
     otherNames,
@@ -39,6 +44,8 @@ export const useUserStore = defineStore('user', () => {
     accessToken,
     setUser,
     setAccessToken,
+    isLoggedIn,
+    switchIsLoggedIn,
   }
 })
 

@@ -4,10 +4,13 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const router = useRouter()
+const user = useUserStore()
 const logout = () => {
   localStorageState.value = null
+  user.isLoggedIn = false
   router.replace('/')
 }
+
 // get current page name
 </script>
 

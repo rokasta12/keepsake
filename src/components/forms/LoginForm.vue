@@ -56,6 +56,7 @@ const handleSubmit = async (e: MouseEvent) => {
     const loginResponse = await services.login(body.email, body.password)
 
     user.setAccessToken(loginResponse.data.idToken.jwtToken)
+    user.isLoggedIn = true
     /* useLocalStorage('userresponse', loginResponse) */
     localStorageState.value = loginResponse.data
     if (loginResponse.status.toString().startsWith('2'))
