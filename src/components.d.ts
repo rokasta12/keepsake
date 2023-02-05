@@ -8,14 +8,14 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Alert: typeof import('./components/Notification/Alert.vue')['default']
-    AudioPlayer: typeof import('./components/AudioPlayer.vue')['default']
-    Family: typeof import('./components/forms/Family.vue')['default']
+    AudioPlayer: typeof import('./components/Posts/AudioPlayer.vue')['default']
     FamilyCard: typeof import('./components/FamilyCard.vue')['default']
     HeroSection: typeof import('./components/HeroSection.vue')['default']
     KeepSake: typeof import('./components/KeepSake.vue')['default']
     LoginForm: typeof import('./components/forms/LoginForm.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
-    PostCard: typeof import('./components/PostCard.vue')['default']
+    PostButton: typeof import('./components/Posts/PostButton.vue')['default']
+    PostCard: typeof import('./components/Posts/PostCard.vue')['default']
     PostList: typeof import('./components/Posts/PostList.vue')['default']
     PostLoader: typeof import('./components/Posts/PostLoader.vue')['default']
     README: typeof import('./components/README.md')['default']
