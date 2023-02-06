@@ -1,5 +1,6 @@
 Posts are loading: I post si stanno caricando
 Share a new story: Condividi una nuova storia
+asd: Crea una nuova famiglia
 button:
   about: Su di me
   back: Indietro
@@ -24,5 +25,7 @@ intro:
 not-found: Non trovato
 p:
   comments: Ancora nessun commento
+  posts: Caricamento post
 span:
-  post: Condividi una storia
+  post: Crea una nuova famiglia
+spasan: Unisciti a una famiglia esistente

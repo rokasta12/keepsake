@@ -1,5 +1,6 @@
 Posts are loading: Trwa ładowanie postów
 Share a new story: Podziel się nową historią
+asd: Stwórz nową rodzinę
 button:
   about: O nas
   back: Wróć
@@ -26,5 +27,7 @@ intro:
 not-found: Nie znaleziono
 p:
   comments: brak komentarzy
+  posts: Ładowanie postów
 span:
-  post: Podziel się historią
+  post: Stwórz nową rodzinę
+spasan: Dołącz do istniejącej rodziny

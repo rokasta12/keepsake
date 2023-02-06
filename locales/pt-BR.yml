@@ -1,5 +1,6 @@
 Posts are loading: As postagens estão carregando
 Share a new story: Compartilhe uma nova história
+asd: Criar uma nova família
 button:
   about: Sobre
   back: Voltar
@@ -25,5 +26,7 @@ intro:
 not-found: Não encontrado
 p:
   comments: Nenhum comentário ainda
+  posts: Carregando mensagens
 span:
-  post: Compartilhe uma história
+  post: Criar uma nova família
+spasan: Junte-se a uma família existente

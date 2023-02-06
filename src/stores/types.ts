@@ -1,10 +1,12 @@
 export interface Family {
   _id: string
-  familyName: string
+  name: string
   createdDate: string
   adminUser: any
   feed: any[]
   members: Member[]
+  code: string
+  isAvailibleForNewMembers: boolean
   __v: number
 }
 
@@ -66,6 +68,7 @@ export interface User {
   createdAt: string
   updatedAt: string
   __v: number
+  profilePicUrl: string
 }
 export interface VerifyEmailData {
   otp: string

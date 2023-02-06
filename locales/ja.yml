@@ -1,5 +1,6 @@
 Posts are loading: 投稿を読み込んでいます
 Share a new story: 新しいストーリーを共有する
+asd: 新しい家族を作る
 button:
   about: これは？
   back: 戻る
@@ -22,5 +23,7 @@ intro:
 not-found: 見つかりませんでした
 p:
   comments: コメントはまだありません
+  posts: 投稿を読み込んでいます
 span:
-  post: ストーリーを共有する
+  post: 新しい家族を作る
+spasan: 既存のファミリーに参加する

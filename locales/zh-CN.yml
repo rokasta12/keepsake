@@ -1,5 +1,6 @@
 Posts are loading: 帖子正在加载
 Share a new story: 分享一个新故事
+asd: 创建一个新的家庭
 button:
   about: 关于
   back: 返回
@@ -23,5 +24,7 @@ intro:
 not-found: 未找到页面
 p:
   comments: 暂时没有评论
+  posts: 加载帖子
 span:
-  post: 分享一个故事
+  post: 创建一个新的家庭
+spasan: 加入现有家庭

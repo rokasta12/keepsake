@@ -10,4 +10,8 @@ export const endpoints = {
     accountDetails: '/v1/auth/me',
   },
   posts: '/posts',
+  families: {
+    families: '/families',
+    myFamilies: '/families/my-family',
+  },
 }

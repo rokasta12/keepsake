@@ -1,5 +1,6 @@
 Posts are loading: Posts are loading
 Share a new story: Share a new story
+asd: Create a new family
 button:
   about: About
   back: Back
@@ -37,8 +38,10 @@ login:
 not-found: Not found
 p:
   comments: No comments yet
+  posts: Loading posts
 span:
-  post: Share a story
+  post: Create a new family
+spasan: Join to an existing family
 verify:
   resend: Resend
   title: Verify your email

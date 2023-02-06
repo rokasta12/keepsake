@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { format } from 'date-fns'
 import type { Family } from '~/stores/types'
 const props = defineProps<{
   family: Family
 }>()
+
+async function closeFamily() {
+  // await services.closeFamily(props.family._id)
+}
 
 const family = props.family
 </script>
@@ -13,15 +16,18 @@ const family = props.family
     <div class="w-full  px-4 mb-8">
       <div class="rounded-lg shadow-lg p-6">
         <h1 class="text-2xl font-bold mb-4 text-white">
-          {{ family.familyName }}
+          {{ family.name }}
         </h1>
-        <p class="text-gray-400 mb-4">
-          Created on: {{ format(new Date(family.createdDate), 'MM/dd/yyyy') }}
+        <p class="text-gray-4000 mb-4">
+          <!-- Created on: {{ format(new Date(family.createdDate), 'MM/dd/yyyy') }} -->
+        </p>
+        <p class="text-2xs font-bold mb-4 text-gray">
+          {{ `Invite ID: ${family.code}` }}
         </p>
         <h2 class="text-xl font-bold mb-4 text-white">
           Admin User
         </h2>
-        <div v-if="family.adminUser" class="flex mb-4">
+        <div v-if="family?.adminUser" class="flex mb-4">
           <img :src="family.adminUser.profilePicUrl" alt="Admin User" class="w-12 h-12 rounded-full mr-4">
           <div>
             <p class="text-gray-400">
@@ -52,6 +58,11 @@ const family = props.family
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="closeFamily">
+            Close to public
+          </button>
         </div>
       </div>
     </div>

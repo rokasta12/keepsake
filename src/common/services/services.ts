@@ -48,6 +48,21 @@ export const editAccountDetails = async (data: any) => {
   return response.data
 }
 
+export const getFamilies = async () => {
+  const response = await httpClient.get(endpoints.families.myFamilies)
+  return response.data
+}
+
+export const createFamily = async (familyName: string) => {
+  const response = await httpClient.post(endpoints.families.families, { name: familyName })
+  return response.data
+}
+
+export const joinFamily = async (code: string) => {
+  const response = await httpClient.get('http://localhost:3002/families/join-family' + `/${code}`)
+  return response.data
+}
+
 export const services = {
-  signup, verifyEmail, login, makePost, getAccountDetails, getPosts, editAccountDetails,
+  signup, verifyEmail, login, makePost, getAccountDetails, getPosts, editAccountDetails, getFamilies, createFamily, joinFamily,
 }

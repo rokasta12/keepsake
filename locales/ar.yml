@@ -1,5 +1,6 @@
 Posts are loading: يتم تحميل المشاركات
 Share a new story: شارك قصة جديدة
+asd: أنشئ عائلة جديدة
 button:
   about: حول
   back: رجوع
@@ -23,5 +24,7 @@ intro:
 not-found: صفحة غير موجودة
 p:
   comments: لا تعليقات حتى الآن
+  posts: جار تحميل المقالات
 span:
-  post: شارك قصة
+  post: أنشئ عائلة جديدة
+spasan: انضم إلى عائلة موجودة

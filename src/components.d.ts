@@ -7,10 +7,12 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AddFamilyButton: typeof import('./components/Family/AddFamilyButton.vue')['default']
     Alert: typeof import('./components/Notification/Alert.vue')['default']
     AudioPlayer: typeof import('./components/Posts/AudioPlayer.vue')['default']
-    FamilyCard: typeof import('./components/FamilyCard.vue')['default']
+    FamilyCard: typeof import('./components/Family/FamilyCard.vue')['default']
     HeroSection: typeof import('./components/HeroSection.vue')['default']
+    JoinFamilyButton: typeof import('./components/Family/JoinFamilyButton.vue')['default']
     KeepSake: typeof import('./components/Navbar&Footer/KeepSake.vue')['default']
     LoginForm: typeof import('./components/forms/LoginForm.vue')['default']
     Modal: typeof import('./components/Posts/Modal.vue')['default']

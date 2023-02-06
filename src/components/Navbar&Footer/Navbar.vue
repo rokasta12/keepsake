@@ -47,21 +47,25 @@ const logout = () => {
               :class="{ 'border-indigo-500 ': route.name === 'index' }"
             >Home</a>
             <a
+              v-if="user.currentUser"
               href="/family"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
             >Family</a>
 
             <a
+              v-if="user.currentUser"
               href="/feed"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 "
               :class="{ 'border-indigo-500 ': route.name === 'feed' }"
             >Posts</a>
             <a
+              v-if="!user.currentUser"
               href="/auth/signup"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
             >Sign
               up</a>
             <a
+              v-if="!user.currentUser"
               href="/auth/login"
               class="inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
             >Login</a>
@@ -77,7 +81,7 @@ const logout = () => {
           </button>
 
           <!-- Profile dropdown -->
-          <Menu as="div" class="relative ml-3">
+          <Menu v-if="user.currentUser" as="div" class="relative ml-3">
             <div>
               <MenuButton
                 class="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -85,7 +89,7 @@ const logout = () => {
                 <span class="sr-only">Open user menu</span>
                 <img
                   class="h-8 w-8 rounded-full"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  :src="user.currentUser.profilePicUrl || 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'"
                   alt=""
                 >
               </MenuButton>

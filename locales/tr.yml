@@ -1,5 +1,6 @@
 Posts are loading: Gönderiler yükleniyor
 Share a new story: Yeni bir hikaye paylaşın
+asd: Yeni bir aile oluştur
 button:
   about: Hakkımda
   back: Geri
@@ -29,5 +30,7 @@ intro:
 not-found: Bulunamadı
 p:
   comments: henüz yorum yok
+  posts: gönderiler yükleniyor
 span:
-  post: Bir hikaye paylaşın
+  post: Yeni bir aile oluştur
+spasan: Mevcut bir aileye katılın

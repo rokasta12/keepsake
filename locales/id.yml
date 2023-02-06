@@ -1,5 +1,6 @@
 Posts are loading: Postingan sedang dimuat
 Share a new story: Berbagi cerita baru
+asd: Buat keluarga baru
 button:
   about: Tentang
   back: Kembali
@@ -26,5 +27,7 @@ intro:
 not-found: Tidak ditemukan
 p:
   comments: Belum ada komentar
+  posts: Memuat postingan
 span:
-  post: Berbagi cerita
+  post: Buat keluarga baru
+spasan: Bergabung dengan keluarga yang sudah ada

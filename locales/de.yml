@@ -1,5 +1,6 @@
 Posts are loading: Beiträge werden geladen
 Share a new story: Teilen Sie eine neue Geschichte
+asd: Erstellen Sie eine neue Familie
 button:
   about: Über
   back: Zurück
@@ -26,5 +27,7 @@ intro:
 not-found: Nicht gefunden
 p:
   comments: Noch keine Kommentare
+  posts: Beiträge werden geladen
 span:
-  post: Teilen Sie eine Geschichte
+  post: Erstellen Sie eine neue Familie
+spasan: Tritt einer bestehenden Familie bei
